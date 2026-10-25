@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.vscode/
+figures/*/*.svg
+figures/*/*.csv
+figures/*/*_r[0-9]*.*
+data/rasters/
+analysis/output/

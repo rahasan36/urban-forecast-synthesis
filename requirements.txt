@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy>=1.11
+matplotlib
+rasterio
+pyproj
+shapely
+cartopy
+pyogrio
+openpyxl
+scikit-image

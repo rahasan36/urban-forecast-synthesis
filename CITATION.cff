@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Code and data for: Divergent urban boundaries and high spatial uncertainty in global urban land forecasts"
+type: software
+authors:
+  - family-names: Ahasan
+    given-names: Rakibul
+    orcid: "https://orcid.org/0000-0003-4772-8499"
+  - family-names: Güneralp
+    given-names: Burak
+    orcid: "https://orcid.org/0000-0002-5825-0630"
+repository-code: "https://github.com/rahasan36/urban-forecast-synthesis"
+license: CC-BY-NC-ND-4.0
+keywords:
+  - urban expansion
+  - urban land forecasts
+  - shared socioeconomic pathways
+  - ensemble agreement
+  - urban boundaries
+  - land cover
+  - spatial uncertainty

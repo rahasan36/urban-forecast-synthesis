@@ -1,0 +1,9 @@
+product,year,source_file,source_url
+Li2021,2013,Li2021/Li2021_2013.tif,https://doi.org/10.6084/m9.figshare.9696218
+Chen2020,2015,Chen2020/Global urban product_SSPs_2015_2100/global_urban_2015.tif,https://doi.org/10.1594/PANGAEA.905890
+Chen2022,2015,Chen2022/Global 7-land-types LULC projection dataset under SSPs-RCPs/global_LULC_2015.tif,https://doi.org/10.5281/zenodo.4584775
+Gao2021,2000,Gao2021/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100-byr-geotiff/baseyear-geotiff/urb_frac_2000.tif,https://doi.org/10.7927/1z4r-ez63
+Hou2022,2015,Hou2022/SSP1_RCP1.9/simulation2015.tif,https://doi.org/10.6084/m9.figshare.20088368.v1
+Koomen2UP,2010,Koomen2UP/SSP1/M3var1_SSP1_2010_urb.tif,https://doi.org/10.5281/zenodo.15396282
+He2023,2015,He2023/He2023_2015.tif,https://doi.org/10.6084/m9.figshare.20391117.v4
+Zhang2023,2020,Zhang2023/shared_2020/history_2020.tif,https://doi.org/10.6084/m9.figshare.23542860

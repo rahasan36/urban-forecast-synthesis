@@ -1,0 +1,20 @@
+figure,content,script,inputs
+Figure 1,Variation among forecasts in urban boundary length relative to urban area,Fig1_boundary_dispersion/make_fig1_boundary_dispersion.py,results/global_boundary_area.csv
+Figure 2,Block-scale variation in boundary length relative to urban area,Fig2_block_dispersion/make_fig2_block_dispersion.py,"blocks100km, naturalearth"
+Figure 3,"Cropland and forest shares of the projected urban boundary in 2100, SSP1",Fig3_boundary_contact/make_fig3_boundary_contact.py,"countries, regions, boundary_composition, naturalearth"
+Figure 4,"Pairwise agreement among forecasts on the location of urban land, SSP1",Fig4_pairwise_agreement/make_fig4_pairwise_agreement.py,"pairwise_agreement, countries, naturalearth"
+Supplementary Fig. 1,Projected urban expansion and overlap with other land covers,SFig01_landcover_conversion/make_sfig01_landcover_conversion.py,"results/global_metrics.csv, results/landcover_endpoint_changes.csv"
+Supplementary Fig. 2,Urban landscape configuration across nine forecasts,SFig02_configuration/make_sfig02_configuration.py,results/configuration_metrics.csv
+Supplementary Fig. 3,Boundary density of each forecast relative to the block median,SFig03_block_signatures/make_sfig03_block_signatures.py,blocks100km
+Supplementary Fig. 4,"Block size, date, and the dispersion of boundary length and urban area",SFig04_block_threshold/make_sfig04_block_threshold.py,blocks100km
+Supplementary Fig. 5,Urban boundaries adjoining cropland and forest across scenarios,SFig05_contact_over_time/make_sfig05_contact_over_time.py,results/landcover_metrics.csv
+Supplementary Fig. 6,Regional change in cropland and forest contact and its spread among forecasts,SFig06_regional_contact_growth/make_sfig06_regional_contact_growth.py,results/landcover_endpoint_changes.csv
+Supplementary Fig. 7,"Agreement and disagreement on urban location in 2100, SSP1",SFig07_agreement_origin/make_sfig07_agreement_origin.py,"agreement_blocks, regions"
+Supplementary Fig. 8,"Exact forecast intersections in the nine-forecast ensemble, SSP1",SFig08_intersections/make_sfig08_intersections.py,intersections
+Supplementary Fig. 9,Latitudinal distribution of unanimous urban agreement and forecast variation,SFig09_latitude/make_sfig09_latitude.py,latitude
+Supplementary Fig. 10,"Urban union in 2020, 2050 and 2100, SSP1, SSP3 and SSP5",SFig10_urban_union_hexagons/make_sfig10_urban_union_hexagons.py,blocks5km
+Supplementary Fig. 11,"Timing of disagreement among the nine forecasts, SSP1, SSP3 and SSP5",SFig11_disagreement_timing/make_sfig11_disagreement_timing.py,"blocks5km, regions, naturalearth"
+Supplementary Fig. 12,"Local clustering of urban support under two specifications, SSP1, 2100",SFig12_support_clusters/make_sfig12_support_clusters.py,"support_clusters, naturalearth"
+Supplementary Fig. 13,"Urban membership in six metropolitan windows, SSP1, 2020 and 2100",SFig13_metropolitan_windows/make_sfig13_metropolitan_windows.py,metropolitan
+Supplementary Fig. 14,"Urban membership in seven large metropolitan regions, SSP1, 2020 and 2100",SFig14_metropolitan_established/make_sfig14_metropolitan_established.py,metropolitan
+Supplementary Fig. 15,"Urban membership in six lower-income urbanizing regions, SSP1, 2020 and 2100",SFig15_metropolitan_growth/make_sfig15_metropolitan_growth.py,metropolitan

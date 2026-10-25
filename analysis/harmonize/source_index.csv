@@ -1,0 +1,82 @@
+product,ssp,year,rcp,source_file,sha256,source_url,shared_2020_baseline
+Chen2020,1,2020,,Chen2020/Global urban product_SSPs_2015_2100/SSP1/global_SSP1_2020.tif,0e560596413cf7d57d7ac02761e980b7403b4e1117365357fe1b5a8bdee412be,,False
+Chen2020,1,2050,,Chen2020/Global urban product_SSPs_2015_2100/SSP1/global_SSP1_2050.tif,394d99e0ae4e1c1586e0f1ac5ac2be07bd1aaca54414848b38c96c3d8fa5cdd6,,False
+Chen2020,1,2100,,Chen2020/Global urban product_SSPs_2015_2100/SSP1/global_SSP1_2100.tif,aae89bb04afa62dfc9852d69fb8c0087e2a8c3538bb632a8ba86bb2a91fe7149,,False
+Chen2020,3,2020,,Chen2020/Global urban product_SSPs_2015_2100/SSP3/global_SSP3_2020.tif,bc6e716c8b54ecf3d0d0975da8383671961c9b2d9afe9256627d3ecbd91f8630,,False
+Chen2020,3,2050,,Chen2020/Global urban product_SSPs_2015_2100/SSP3/global_SSP3_2050.tif,707594af4abbb6b18ffb211ebc0ea230b68ddf80f97c200eebd5d9d19a4063c6,,False
+Chen2020,3,2100,,Chen2020/Global urban product_SSPs_2015_2100/SSP3/global_SSP3_2100.tif,187c351d9cabf8233a18034abb92cf28fe2ff96da9aa58ce188a699ef3e4a618,,False
+Chen2020,5,2020,,Chen2020/Global urban product_SSPs_2015_2100/SSP5/global_SSP5_2020.tif,80e7d95158788c9aa31a53a1fd940283e8bbce420a446dbb259f5160f4998b67,,False
+Chen2020,5,2050,,Chen2020/Global urban product_SSPs_2015_2100/SSP5/global_SSP5_2050.tif,92e94fb665cbdd4a590489193982275f957976c473e0c31a158052e8a1c92697,,False
+Chen2020,5,2100,,Chen2020/Global urban product_SSPs_2015_2100/SSP5/global_SSP5_2100.tif,e8056b9301cc5567f1e5d87f1f3cbd9da5a68e02b2b7acc068b252630223160d,,False
+Chen2022,1,2020,1.9,Chen2022/Global 7-land-types LULC projection dataset under SSPs-RCPs/SSP1_RCP19/global_SSP1_RCP19_2020.tif,3268a616dab2bb6e5ea77ad41df71fff49ef2eba3a8be4e39e332693d962631c,,False
+Chen2022,1,2050,1.9,Chen2022/Global 7-land-types LULC projection dataset under SSPs-RCPs/SSP1_RCP19/global_SSP1_RCP19_2050.tif,a83ac478a2d1e39253c99fb7c2f1ceed605da84a22172bc66d83fdaa859914de,,False
+Chen2022,1,2100,1.9,Chen2022/Global 7-land-types LULC projection dataset under SSPs-RCPs/SSP1_RCP19/global_SSP1_RCP19_2100.tif,d6921e8a523c72d21cecf1a9300aa887fb04f4cbf98f20dfdc8b96a64069cdb5,,False
+Chen2022,3,2020,7.0,Chen2022/Global 7-land-types LULC projection dataset under SSPs-RCPs/SSP3_RCP70/global_SSP3_RCP70_2020.tif,415e4ae49df2ad9c80657dc3eb24072095c776344ed2bfa831c1f410f656e9dc,,False
+Chen2022,3,2050,7.0,Chen2022/Global 7-land-types LULC projection dataset under SSPs-RCPs/SSP3_RCP70/global_SSP3_RCP70_2050.tif,a532b1cdad35585c2eb565a3a08ec25f88ff8082d1505bd3f80aff7f4ca70486,,False
+Chen2022,3,2100,7.0,Chen2022/Global 7-land-types LULC projection dataset under SSPs-RCPs/SSP3_RCP70/global_SSP3_RCP70_2100.tif,7025568b5e1c514f78f8131b385efd734f624295ed47fb6f120cca40b8d500ec,,False
+Chen2022,5,2020,8.5,Chen2022/Global 7-land-types LULC projection dataset under SSPs-RCPs/SSP5_RCP85/global_SSP5_RCP85_2020.tif,4ee084c92333ef30a5ec80de47927fd2ae5eb424539a6073f36ff328e1ba7dd1,,False
+Chen2022,5,2050,8.5,Chen2022/Global 7-land-types LULC projection dataset under SSPs-RCPs/SSP5_RCP85/global_SSP5_RCP85_2050.tif,003a9e5f94737089a07106eabb9d87f83b1ceb2b43208bb1a23eb4e630542a55,,False
+Chen2022,5,2100,8.5,Chen2022/Global 7-land-types LULC projection dataset under SSPs-RCPs/SSP5_RCP85/global_SSP5_RCP85_2100.tif,0129a01ecd1e6d4da49e5185420324e3842472f1585647e8dcabd060be8862ff,,False
+Gao2021,1,2020,,Gao2021/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100-proj-ssp1-geotiff/ssp1-geotiff/ssp1_2020.tif,081bcd971e5772e029a6b6dff38571c229f844f5171657cd47724be06ff3c79a,,False
+Gao2021,1,2050,,Gao2021/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100-proj-ssp1-geotiff/ssp1-geotiff/ssp1_2050.tif,03db0c60ed394cf5d1890be0e2c0aebd7119adacad2ad312c01c0041de4df594,,False
+Gao2021,1,2100,,Gao2021/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100-proj-ssp1-geotiff/ssp1-geotiff/ssp1_2100.tif,95f97e138be8f5187ad64a0d0bf13cb29755955f032f3cb60b6496f7a181ff6d,,False
+Gao2021,3,2020,,Gao2021/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100-proj-ssp3-geotiff/ssp3-geotiff/ssp3_2020.tif,25099110189ec0671e3e584cd55e67fc42396cb519de11cbe76201448f6d3453,,False
+Gao2021,3,2050,,Gao2021/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100-proj-ssp3-geotiff/ssp3-geotiff/ssp3_2050.tif,5b2ec64c443f3fa21d4aaf862b45c396788c260d04b41d7140f9a87e50d3b34d,,False
+Gao2021,3,2100,,Gao2021/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100-proj-ssp3-geotiff/ssp3-geotiff/ssp3_2100.tif,a381c6739f4ce6246bb71d8ab35ca974151b2ae6f5fe79845236576ac3a728c5,,False
+Gao2021,5,2020,,Gao2021/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100-proj-ssp5-geotiff/ssp5-geotiff/ssp5_2020.tif,3b762ccc25ee78bafe3edde94d4ec45b6c363d137ddcdbf6d0a51126e97f289d,,False
+Gao2021,5,2050,,Gao2021/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100-proj-ssp5-geotiff/ssp5-geotiff/ssp5_2050.tif,68473a557dab57595862201f9b247f66fe972db76f4b00281b4751973ad25be6,,False
+Gao2021,5,2100,,Gao2021/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100-proj-ssp5-geotiff/ssp5-geotiff/ssp5_2100.tif,502550917829047298dafbffc0440b8c4ce6a810d6688fb3edfaa3892cebb166,,False
+He2023,1,2020,1.9,He2023/SSP1_RCP1.9/SSP1-RCP1.9_gISA_2020_1km.tif,e5cf617a7be3a48fa14962d255d9c34159af290d5bc65d23eff73426e9be8c23,,False
+He2023,1,2050,1.9,He2023/SSP1_RCP1.9/SSP1-RCP1.9_gISA_2050_1km.tif,e93f3a5a8dd795cad7216ba036eff864a5c6c69bdcd7c4d8ce28cfeb469bfb02,,False
+He2023,1,2100,1.9,He2023/SSP1_RCP1.9/SSP1-RCP1.9_gISA_2100_1km.tif,0fc04325eeed3e1e52e766a6d520075661b5065b8be644d75cd2440824450b89,,False
+He2023,3,2020,7.0,He2023/SSP3_RCP7.0/SSP3-RCP7.0_gISA_2020_1km.tif,62c59982b5e8416879488f67a90d04a0356a4144d3c9af5eab48ed5a99e6a5c2,,False
+He2023,3,2050,7.0,He2023/SSP3_RCP7.0/SSP3-RCP7.0_gISA_2050_1km.tif,5045dbaf3848d81a7474bededf08f057f2e37e0f6ba6b56a619fc3ed09370bfc,,False
+He2023,3,2100,7.0,He2023/SSP3_RCP7.0/SSP3-RCP7.0_gISA_2100_1km.tif,30d164c58ea1c52e016fc45ab5c845b8a3c00e7c60bb83cf62b7024a2a31463a,,False
+He2023,5,2020,8.5,He2023/SSP5_RCP8.5/SSP5-RCP8.5_gISA_2020_1km.tif,307fd086afaf4994577dae3d77da1bba845e1a523e64c15ce5fb20d0df4a7c3c,,False
+He2023,5,2050,8.5,He2023/SSP5_RCP8.5/SSP5-RCP8.5_gISA_2050_1km.tif,14dfbfddd0128d76506e6fb3d01e62ff492b847ef4d61283a195fea0341bdfab,,False
+He2023,5,2100,8.5,He2023/SSP5_RCP8.5/SSP5-RCP8.5_gISA_2100_1km.tif,008ab4ad5e88f6aa16fab92cba453490190000da8712ab405380c12e482b6c4e,,False
+Hou2022,1,2020,1.9,Hou2022/SSP1_RCP1.9/simulation2020.tif,e61b635e9a375c32a15fa74f682fa5163c1b77cbeef0aec31f367bb05478139a,,False
+Hou2022,1,2050,1.9,Hou2022/SSP1_RCP1.9/simulation2050.tif,cca73d937eca3613507ff421508fdb547faa906ed49a7924c60e2b58cf9e7c57,,False
+Hou2022,1,2100,1.9,Hou2022/SSP1_RCP1.9/simulation2100.tif,89ac05587f448a05cc720830552285046bfa9abe1a5eae13de8e8e89fefe86c0,,False
+Hou2022,3,2020,7.0,Hou2022/SSP3_RCP7.0/simulation2020.tif,06b650f757fe39ce1958fb351425d5eea105eddd8119ac32e03a434f517ba173,,False
+Hou2022,3,2050,7.0,Hou2022/SSP3_RCP7.0/simulation2050.tif,253c32bc8b0d085043176769dd31d3b068b1745803ae4765cba5ab1b512e463e,,False
+Hou2022,3,2100,7.0,Hou2022/SSP3_RCP7.0/simulation2100.tif,c31adcdf9f7afb3d10fc238e0d81656089e48977a7aa3c0926fcb4029c25ea77,,False
+Hou2022,5,2020,8.5,Hou2022/SSP5_RCP8.5/simulation2020.tif,1bc7c55b1e0cb428cc244426f06ccb7cfd03a3e970be781a9f7498da2ac16ea2,,False
+Hou2022,5,2050,8.5,Hou2022/SSP5_RCP8.5/simulation2050.tif,872bd750b161182869cbfef262a829efd0fcaf0e8fb430ffa998e586c67f78c7,,False
+Hou2022,5,2100,8.5,Hou2022/SSP5_RCP8.5/simulation2100.tif,8e59a10c045e7f6506b0e4b78950642407b2e6c0f73d234dbc593899a05c5f5c,,False
+Koomen2UP,1,2020,,Koomen2UP/SSP1/M3var1_SSP1_2020_urb.tif,f05bae044ab77311cddb07e1baccbcb68e37148cb3c17d374a6582ebd9b4f046,,False
+Koomen2UP,1,2050,,Koomen2UP/SSP1/M3var1_SSP1_2050_urb.tif,7fc3baa67c2a808e18e58aff0634a8707e50dae4cb41ebe1bd07b33f8a8aad8b,,False
+Koomen2UP,1,2100,,Koomen2UP/SSP1/M3var1_SSP1_2100_urb.tif,76586c6becdb329ebc7a10bc571eda5064a9befbbfd69db231f3131a63012099,,False
+Koomen2UP,3,2020,,Koomen2UP/SSP3/M3var1_SSP3_2020_urb.tif,5e7a2cb8b086bdf080a492bdc7f7487ef42fa1441d28a72c3f206352d3325700,,False
+Koomen2UP,3,2050,,Koomen2UP/SSP3/M3var1_SSP3_2050_urb.tif,70b2aa7052dc150cbae1ea2f48ccea9bc5127d11a82da7357a6ac8e39d60caeb,,False
+Koomen2UP,3,2100,,Koomen2UP/SSP3/M3var1_SSP3_2100_urb.tif,059759abdcfe179b1f48f45a3097e78ec522f300eea46960b6221d093c3f713a,,False
+Koomen2UP,5,2020,,Koomen2UP/SSP5/M3var1_SSP5_2020_urb.tif,ea3a459883c7955ab9cce65760a24861fc7ad4eede3d9ce8c3003fd1638115cb,,False
+Koomen2UP,5,2050,,Koomen2UP/SSP5/M3var1_SSP5_2050_urb.tif,98f759ae1a1c5c3d6359affd46bb6ec7e1f9f7ff005ee997fe43a17670bf7be5,,False
+Koomen2UP,5,2100,,Koomen2UP/SSP5/M3var1_SSP5_2100_urb.tif,dc9d0d43aed5ca690d9fcbbbede07b41a4513b39277719fcb7086b8d8084f77c,,False
+Li2021,1,2020,,Li2021/gUrban_2020_SSP1.tif,e4f7a837c98ef0d9ef4bd6f39b57ce2f288ba18f5299a02451326439f8fb61fe,https://ndownloader.figshare.com/files/17372294,False
+Li2021,1,2050,,Li2021/gUrban_2050_SSP1.tif,6a94cb0434627ca185d9e765a87135dbfa6f5070ad7a95e408d904251da42941,https://ndownloader.figshare.com/files/17372339,False
+Li2021,1,2100,,Li2021/gUrban_2100_SSP1.tif,3054c84e0ad578e591317ea4801d5ac9daede156a071ba5234f17e592f5b3fcd,https://ndownloader.figshare.com/files/17372279,False
+Li2021,3,2020,,Li2021/gUrban_2020_SSP3.tif,929d17344daec94c25b9439449df0f20439c1523f62826127f6982efad5f52af,https://ndownloader.figshare.com/files/17372300,False
+Li2021,3,2050,,Li2021/gUrban_2050_SSP3.tif,3e66297bcc4217e41e67a782d4acc155abd50f363fbb9cc33bc24987a450f097,https://ndownloader.figshare.com/files/17372345,False
+Li2021,3,2100,,Li2021/gUrban_2100_SSP3.tif,c95aecbaaf4b3e086ca2052ed650f99e3850d41c58b4e3998b229256e7678079,https://ndownloader.figshare.com/files/17372285,False
+Li2021,5,2020,,Li2021/gUrban_2020_SSP5.tif,73bf22a6528582725745747936ba9d36ff8bf14c57e3826ec1cd226ef759981c,https://ndownloader.figshare.com/files/17372306,False
+Li2021,5,2050,,Li2021/gUrban_2050_SSP5.tif,13b5be9e48870397e959c626480deaef5ddf769f81778d2e2ec7f3f982be4237,https://ndownloader.figshare.com/files/17372216,False
+Li2021,5,2100,,Li2021/gUrban_2100_SSP5.tif,502b42114d4040cc57d4adc9e6af6d19e2966be76ee95a3da20cdab0007213e4,https://ndownloader.figshare.com/files/17372291,False
+Zhang2023,1,2020,2.6,Zhang2023/shared_2020/history_2020.tif,4e1172af450a6d7b42108049fc458a0f6c535c9f0ef69668b9fa330d9efd5a83,,True
+Zhang2023,1,2050,2.6,Zhang2023/SSP1_RCP2.6/ssp1_26_2050.tif,257fb1b5672aeafec8e2824194749c29e829a93a56344902aa04fca02dcee8c5,,False
+Zhang2023,1,2100,2.6,Zhang2023/SSP1_RCP2.6/ssp1_26_2100.tif,07ce1b0395c9f302d9d26f01e5634c3422de139b6ac91dc0312c0f60f93d5265,,False
+Zhang2023,3,2020,7.0,Zhang2023/shared_2020/history_2020.tif,4e1172af450a6d7b42108049fc458a0f6c535c9f0ef69668b9fa330d9efd5a83,,True
+Zhang2023,3,2050,7.0,Zhang2023/SSP3_RCP7.0/ssp3_70_2050.tif,aee1a1c2567c370fc0a61f88c27cc76f64c7cd2399a0a5e8584ab07ee18fb199,,False
+Zhang2023,3,2100,7.0,Zhang2023/SSP3_RCP7.0/ssp3_70_2100.tif,f5e0b85aea717ac777ba46e158d7805b7e7fdd1be8c39da7be571cf5bf43e614,,False
+Zhang2023,5,2020,8.5,Zhang2023/shared_2020/history_2020.tif,4e1172af450a6d7b42108049fc458a0f6c535c9f0ef69668b9fa330d9efd5a83,,True
+Zhang2023,5,2050,8.5,Zhang2023/SSP5_RCP8.5/ssp5_85_2050.tif,a61ba479e18256d44c429a1207772ccb5c9e7fba839ee1825e8e2bc775944f02,,False
+Zhang2023,5,2100,8.5,Zhang2023/SSP5_RCP8.5/ssp5_85_2100.tif,71dbc3b3bccf32490843854412923aad59920a998b7ed61a082b34d9ae144430,,False
+Zhao2025,1,2020,,Zhao2025/SSP1/urban_2020_SSP1.tif,d88db917f46d307ffa0a3495b9069928ac2524ad4eaab46f62565dee2207ed59,,False
+Zhao2025,1,2050,,Zhao2025/SSP1/urban_2050_SSP1.tif,a7c6fc4060a5cd8e1887ce246fb819903e2ba516f03183afbce6f595d1a0fee4,,False
+Zhao2025,1,2100,,Zhao2025/SSP1/urban_2100_SSP1.tif,1eff109168e4eb1b7a8bab3ac14293d3b9d9b414264e3b73c4691a5fae705470,,False
+Zhao2025,3,2020,,Zhao2025/SSP3/urban_2020_SSP3.tif,59f57ff8399223a8cd4b56927998a203721881a3051f6d9f8f1503400f31b416,,False
+Zhao2025,3,2050,,Zhao2025/SSP3/urban_2050_SSP3.tif,b2c6f410bb493c0bfda85d056ad9568635045d98314a64528b45f666c3d86542,,False
+Zhao2025,3,2100,,Zhao2025/SSP3/urban_2100_SSP3.tif,1b363ca23bd3ba537f388852477e85fa1e2cf8a2da21a7a24290b906e0ffc99d,,False
+Zhao2025,5,2020,,Zhao2025/SSP5/urban_2020_SSP5.tif,99cf34a7bcab810b246b69c36ce1580f73fac17a7d574b338394e6389630cfdc,,False
+Zhao2025,5,2050,,Zhao2025/SSP5/urban_2050_SSP5.tif,95b149497db7b0ce2c55c1c69bf5570b91e55a8521adad1d96149e08ed13640b,,False
+Zhao2025,5,2100,,Zhao2025/SSP5/urban_2100_SSP5.tif,1aba4cf20ab723a46e4a2ecfd01ffee9ba18b055742cf8e2d1f3e87dd5cf9cf5,,False

@@ -1,0 +1,62 @@
+{
+  "Cropland": [
+    10,
+    11,
+    12,
+    20
+  ],
+  "Mosaic cropland": [
+    30,
+    40
+  ],
+  "Forest": [
+    50,
+    60,
+    61,
+    62,
+    70,
+    71,
+    72,
+    80,
+    81,
+    82,
+    90
+  ],
+  "Mosaic natural": [
+    100,
+    110
+  ],
+  "Shrubland": [
+    120,
+    121,
+    122
+  ],
+  "Grassland": [
+    130
+  ],
+  "Lichens & mosses": [
+    140
+  ],
+  "Sparse vegetation": [
+    150,
+    151,
+    152,
+    153
+  ],
+  "Flooded forest": [
+    160,
+    170,
+    180
+  ],
+  "Bare areas": [
+    200,
+    201,
+    202
+  ],
+  "Water bodies": [
+    210
+  ],
+  "Permanent snow & ice": [
+    220
+  ]
+}
