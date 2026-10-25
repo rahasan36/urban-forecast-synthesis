@@ -1,8 +1,6 @@
-"""Supplementary Fig. 1. Projected urban expansion and overlap with other land covers.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-A-C  urban area added relative to each forecast's own 2020 map under SSP1, SSP3 and SSP5.
-D-F  net increase from 2020 to 2100 in the overlap of urban land with cropland, forest and other nonurban
-     classes of the 2016 land-cover baseline, at the 0.40 urban-fraction threshold.
+Author: Rakibul Ahasan
 """
 import argparse
 import os

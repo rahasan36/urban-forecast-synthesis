@@ -1,11 +1,6 @@
-"""Supplementary Fig. 12: local clustering of urban support among the nine forecasts in 2100 under SSP1,
-under the primary and the stricter specification.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-a: Getis-Ord Gi* z score of block disagreement intensity in 50-km blocks with at least 10 km2 of union
-urban land (primary specification, circular neighborhood of radius four blocks). b: contested and
-consensus clusters under the stricter specification (25 km2 floor, at least nine neighbors, false
-discovery rate control). c, d: share of eligible blocks in contested and consensus clusters by region
-under the two specifications, with one region order.
+Author: Rakibul Ahasan
 """
 import argparse
 import os
@@ -36,7 +31,7 @@ plt.rcParams.update({
 
 BLUE, GRAY, RED = "#2B6CA3", "#C9C9C9", "#D7301F"
 BLOCK = 50000.0
-GRID_X0, GRID_Y0 = -17367529.34, 7289708.89   # upper-left corner of the EPSG:6933 analysis grid (m)
+GRID_X0, GRID_Y0 = -17367529.34, 7289708.89
 REGIONS = {1: "Asia-Pacific Developed", 2: "Australia & New Zealand", 3: "Caribbean", 4: "Developing Pacific",
            5: "Eastern Africa", 6: "Eastern Asia", 7: "Eurasia", 9: "India & Sri Lanka", 10: "Meso America",
            11: "Middle East", 12: "North Africa", 13: "N. & W. Europe", 14: "Rest of Southern Asia",

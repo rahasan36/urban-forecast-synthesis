@@ -1,10 +1,7 @@
-"""Source-native urban area of Gao 2021: the urban fraction of each source cell multiplied by the
-authors' land-area layer (land_area_km2.tif) on the native grid, for the 2000 base year and the nine
-analyzed maps. A diagnostic beside the thresholded footprint, not an author-tabulated total.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Input: the land-area layer under data/rasters/source/Gao2021 (or --land) and the Gao 2021 maps listed
-in baseline_sources.csv and harmonize/source_index.csv.
-Output: analysis/output/area_reconciliation/gao_land_weighted.json"""
+Author: Rakibul Ahasan
+"""
 import argparse
 import concurrent.futures
 import csv

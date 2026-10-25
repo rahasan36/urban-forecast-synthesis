@@ -1,13 +1,6 @@
-"""Supplementary Fig. 4. Block size, date, and the dispersion of boundary length and urban area.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Blocks of 100 x 100 km.
-a     share of blocks where the CV of boundary length across the nine forecasts exceeds the CV of urban area,
-      as a function of the minimum urban area every forecast must map in the block; SSP1 bold, SSP3 and SSP5
-      thin; 2020, 2050 and 2100.
-b     cumulative distributions of the block CV of urban area and of boundary length, SSP1, 2020 (solid) and
-      2100 (dashed), blocks with at least 10 km2 in every forecast.
-c, d  CV of urban area and of boundary length by quintile of block urban area (mean across forecasts),
-      SSP1 2020 (c) and 2100 (d).
+Author: Rakibul Ahasan
 """
 import argparse
 import os
@@ -40,7 +33,6 @@ def out_path(folder, ext):
 
 
 def load(blocks_dir, ssp, year):
-    """Minimum and mean urban area across forecasts, and the CV of urban area and of boundary length, per block."""
     z = np.load(os.path.join(blocks_dir, f"blocks100km_{ssp}_{year}.npz"))
     area = z["area"].astype(float)
     boundary = z["bnd"].astype(float)

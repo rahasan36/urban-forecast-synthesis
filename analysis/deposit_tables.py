@@ -1,15 +1,6 @@
-"""Tables of the data deposit that are not printed in the Supplementary Information.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Reads the outputs of the analysis and writes to data/tables:
-urban_area_by_domain.csv: urban area of each of the 81 analyzed maps on its full source domain and on
-    the common analysis domain, with the reported total where one was located (written by
-    area_reconciliation/area_comparison.py).
-urban_area_base_year_maps.csv: the same for the base-year maps distributed with each forecast.
-regional_contact_change.csv: for each region and pathway, the ratio of 2100 to 2020 contact length
-    with cropland and with forest (median and range across the nine forecasts) and the ratio of the
-    longest to the shortest forecast contact length in 2100 (written by measure/summaries.py).
-exact_intersections.csv: the area of each of the 511 nonempty forecast combinations for every
-    pathway and year (written by agreement/intersections_latitude.py).
+Author: Rakibul Ahasan
 """
 import argparse
 import sys

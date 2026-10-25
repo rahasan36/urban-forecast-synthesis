@@ -1,9 +1,7 @@
-"""Project the ESA CCI / C3S land-cover map of 2016 or 2020 (300 m, geographic) onto the 1-km
-equal-area analysis grid by nearest-neighbor resampling.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Usage: python analysis/harmonize/landcover_baseline.py 2016
-Input: the land-cover netCDF file under data/rasters/source/ESA_CCI (or --source).
-Output: data/rasters/baseline/ESA_CCI_<year>_lccs_cea1km.tif"""
+Author: Rakibul Ahasan
+"""
 import argparse
 import sys
 from pathlib import Path
@@ -34,7 +32,6 @@ prof = dict(driver="GTiff", width=WIDTH, height=HEIGHT, count=1, dtype="uint8", 
             transform=T, compress="lzw", tiled=True, blockxsize=512, blockysize=512, BIGTIFF="YES")
 BAND = 1000
 with rasterio.open(f"netcdf:{src_file}:lccs_class") as s:
-    # The netCDF variable reports an identity transform; the true one is the global 300 m grid.
     st = Affine(360.0 / s.width, 0, -180.0, 0, -180.0 / s.height, 90.0)
     with WarpedVRT(s, src_crs=CRS.from_epsg(4326), src_transform=st, crs=CRS.from_epsg(6933), transform=T,
                    width=WIDTH, height=HEIGHT, resampling=Resampling.nearest, src_nodata=0, nodata=0) as vrt, \

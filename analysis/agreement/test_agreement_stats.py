@@ -1,7 +1,7 @@
-"""Synthetic checks of agreement_stats.py: the count-based pooled Jaccard index and the summed pair
-intersection equal the direct pairwise calculation, and the location agreement is about 1 for
-identical or nested forecasts, about 0 for independent placement (also under a regional gradient)
-and negative for disjoint placement."""
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
+
+Author: Rakibul Ahasan
+"""
 import itertools
 import sys
 from pathlib import Path

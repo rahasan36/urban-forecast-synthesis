@@ -1,9 +1,6 @@
-"""Supplementary Fig. 9: latitudinal distribution of unanimous urban agreement and forecast variation.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-(A to C) Area all nine forecasts call urban in each 2-degree latitude band, under SSP1, SSP3
-and SSP5. (D to F) Urban area of each forecast as a share of the band's union: the line is
-the median across the nine forecasts and the shading the range. Bands with a union below
-2,000 km2 are left out.
+Author: Rakibul Ahasan
 """
 import argparse
 import os

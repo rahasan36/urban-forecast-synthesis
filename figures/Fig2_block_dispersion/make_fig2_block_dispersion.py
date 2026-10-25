@@ -1,11 +1,6 @@
-"""Figure 2. Block-scale variation in boundary length relative to urban area.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-For each 100 x 100 km block in which every forecast maps at least 10 km2 of urban land, R = log2(CV of
-boundary length / CV of urban area) across the nine forecasts (population standard deviation over mean).
-a  R in 2020 under SSP1, with an inset histogram and the shares on either side of zero.
-b  share of blocks with R > 0 by region, 2020 and 2100, SSP1 (regions with at least 20 eligible blocks in both years).
-c  R by decile of block urban area (mean across forecasts), 2020 and 2100, SSP1.
-d  share of blocks with R > 0 by pathway and year, bars at the 10 km2 floor and dots at a 50 km2 floor.
+Author: Rakibul Ahasan
 """
 import argparse
 import os
@@ -24,8 +19,8 @@ REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
 FIG_DATA = os.path.join(REPO, "data", "figures")
 NAME = "Fig2_block_dispersion"
 
-GRID_X0, GRID_Y0 = -17367529.34, 7289708.89     # upper-left corner of the 1-km EPSG:6933 analysis grid (m)
-BLOCK = 100000                                  # block size (m)
+GRID_X0, GRID_Y0 = -17367529.34, 7289708.89
+BLOCK = 100000
 REGION = {1: "Asia-Pacific Developed", 2: "Australia & NZ", 3: "Caribbean", 4: "Developing Pacific",
           5: "Eastern Africa", 6: "Eastern Asia", 7: "Eurasia", 9: "India & Sri Lanka", 10: "Meso America",
           11: "Middle East", 12: "North Africa", 13: "N. & W. Europe", 14: "Rest of S. Asia", 15: "South America",
@@ -49,7 +44,6 @@ def out_path(folder, ext):
 
 
 def block_ratio(blocks_dir, ssp, year, floor=10):
-    """log2 ratio of the CV of boundary length to the CV of urban area, and the mean urban area, per block."""
     z = np.load(os.path.join(blocks_dir, f"blocks100km_{ssp}_{year}.npz"))
     area = z["area"].astype(float)
     boundary = z["bnd"].astype(float)

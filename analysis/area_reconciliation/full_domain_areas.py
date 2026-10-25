@@ -1,15 +1,7 @@
-"""Urban area of every source map on its full source domain and on the common analysis domain.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Each of the 81 analyzed maps and the base-year map distributed with eight of the forecasts is
-reprojected onto a global 1-km EPSG:6933 grid that covers every source extent (origin -17,368,529.34 m,
-7,342,708.89 m; 34,738 x 14,686 cells), with nearest-neighbor resampling for categorical maps and
-area averaging for the fractional maps (urban at a fraction of 0.40, He 2023 divided by 100). The
-script counts urban cells on the full source domain and inside the common valid domain, and for the
-fractional maps also sums the unthresholded fractions. The difference between the two counts is the
-urban area removed by the restriction to the common domain (Methods).
-
-Inputs: harmonize/source_index.csv and baseline_sources.csv (files under data/rasters/source) and
-data/rasters/common_valid.tif. Output: analysis/output/area_reconciliation/maps/*.json"""
+Author: Rakibul Ahasan
+"""
 import concurrent.futures
 import csv
 import json

@@ -1,12 +1,7 @@
-"""Agreement statistics of nine binary forecast maps within strata (zones or zone x distance band).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-For each stratum: A valid cells, S1 = sum of u_i and S2 = sum of u_i^2 (u_i = cells forecast i calls
-urban), O = sum over cells of C(n, 2) = the summed intersection of the 36 forecast pairs, M = the sum
-over pairs of min(u_i, u_j), the largest pair intersection the amounts allow, and Un = cells at least
-one forecast calls urban. The pair intersection expected under independent placement inside a
-stratum is E = (S1^2 - S2) / (2A), and the location agreement kappa = sum(O - E) / sum(M - E).
-The pooled pairwise Jaccard index from the histogram h[n] of the number n of forecasts calling a cell
-urban is J = sum h[n] C(n, 2) / sum h[n] (36 - C(9 - n, 2)) (Eqs. S6 to S10)."""
+Author: Rakibul Ahasan
+"""
 import numpy as np
 
 

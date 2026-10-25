@@ -1,13 +1,7 @@
-"""Accounting checks across the measurements, and gross and net changes of overlap.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Checks that class contact sums to the boundary length and class overlap to the urban area of each
-map, that the boundary segments tallied by the number of forecasts sharing them (agreement/ensemble.py)
-add up to the separately measured boundary lengths, and that urban area falls as the threshold of the
-fractional forecasts rises. Gross gains and losses of overlap from 2020 to 2100 are tallied from the
-ensemble rasters and checked against the net changes.
-
-Run after measure/summaries.py and agreement/ensemble.py. Outputs (analysis/output/measure):
-gross_and_net_changes.csv and numerical_checks.json."""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 from pathlib import Path

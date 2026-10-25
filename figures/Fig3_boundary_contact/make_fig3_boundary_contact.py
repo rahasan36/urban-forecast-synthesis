@@ -1,11 +1,6 @@
-"""Fig. 3: cropland and forest shares of the projected urban boundary in 2100, SSP1.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Shares are medians across the nine forecasts of the boundary length each forecast measures
-in a country. (a) Countries by cropland share and forest share, three classes each (breaks at
-30 and 50 percent for cropland and at 4 and 14 percent for forest); yellow outlines mark
-Eastern Africa, Western Africa and the rest of Southern Asia, the regions with the most
-contested clusters. (b, c) Cropland and forest shares alone, five classes. (d) Regional
-boundary composition, class medians across forecasts rescaled to sum to 100 percent.
+Author: Rakibul Ahasan
 """
 import argparse
 import json
@@ -37,7 +32,6 @@ plt.rcParams.update({
     "axes.linewidth": 0.6, "pdf.fonttype": 42,
 })
 
-# Upper-left corner of the 1-km EPSG:6933 analysis grid, in m; the country grid is read at 20 km
 X0, Y0 = -17367529.34, 7289708.89
 FACTOR = 20
 REGION = {1: "Asia-Pacific Developed", 2: "Australia & NZ", 3: "Caribbean", 4: "Developing Pacific",
@@ -46,7 +40,6 @@ REGION = {1: "Asia-Pacific Developed", 2: "Australia & NZ", 3: "Caribbean", 4: "
           15: "South America", 16: "South-East Asia", 17: "S. & E. Europe", 18: "S. & Middle Africa",
           19: "USA & Canada", 20: "Western Africa"}
 CONTESTED = (5, 20, 14)
-# Bivariate colors: rows are forest classes, columns cropland classes
 CROP_RGB = np.array([[0.94, 0.94, 0.94], [0.97, 0.74, 0.47], [0.88, 0.43, 0.10]])
 FOREST_RGB = np.array([[1, 1, 1], [0.72, 0.88, 0.76], [0.38, 0.70, 0.47]])
 BIVARIATE = FOREST_RGB[:, None, :] * CROP_RGB[None, :, :]

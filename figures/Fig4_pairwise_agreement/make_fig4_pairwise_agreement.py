@@ -1,13 +1,6 @@
-"""Fig. 4: pairwise agreement among the nine forecasts on the location of urban land, SSP1.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-The pooled pairwise Jaccard index is the sum of the 36 pair intersections divided by the
-sum of the 36 pair unions. For a 1-km cell that n forecasts call urban, the pair
-intersections number C(n,2) and the pair unions 36 - C(9-n,2).
-(a) Pooled index in 20-km blocks whose mean pair union is at least 5 km2, with profiles by
-longitude and latitude of the mean pair union, split into land both forecasts of a pair call
-urban and land only one of them calls urban. (b) The 36 pair indices in each region in 2100,
-with the pooled index of 2020. (c) Pooled index in 2020 and 2100 in the 30 countries with the
-most projected urban land.
+Author: Rakibul Ahasan
 """
 import argparse
 import itertools
@@ -33,7 +26,6 @@ plt.rcParams.update({
     "axes.linewidth": 0.6, "pdf.fonttype": 42,
 })
 
-# Upper-left corner of the 1-km EPSG:6933 analysis grid and the block size, in m
 X0, Y0 = -17367529.34, 7289708.89
 BLOCK = 20000
 EARTH_RADIUS = 6378137.0
@@ -62,7 +54,6 @@ def y_to_lat(y):
 
 
 def pair_jaccard(z, year, unit):
-    """Jaccard index, intersection and union of each forecast pair by region or country."""
     inter = z[f"inter{year}_{unit}"].astype(float)
     area = z[f"area{year}_{unit}"].astype(float)
     union = np.stack([area[:, i] + area[:, j] for i, j in PAIRS], 1) - inter

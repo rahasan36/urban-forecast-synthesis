@@ -1,8 +1,6 @@
-"""Supplementary Fig. 7: agreement and disagreement on urban location in 2100, SSP1.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Area in each 50-km block of the analysis grid that (A) all nine forecasts call urban in
-2100, (B) is disputed in 2100 and was already disputed in 2020, and (C) is disputed in 2100
-and was not disputed in 2020.
+Author: Rakibul Ahasan
 """
 import argparse
 import json
@@ -39,7 +37,6 @@ PC = ccrs.PlateCarree()
 
 
 class CEA6933(ccrs._RectangularProjection):
-    """EPSG:6933, the cylindrical equal-area projection of the analysis grid."""
 
     def __init__(self):
         super().__init__([("proj", "cea"), ("lat_ts", 30.0), ("lon_0", 0.0)],

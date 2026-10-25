@@ -1,11 +1,7 @@
-"""Exact forecast intersections, persistence of unanimous agreement and latitude profiles.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-membership_exact.csv: the area of each of the 511 nonempty forecast combinations (exact membership,
-Fig. S8) from the membership histograms. persistent_agreement.csv: the share of unanimous land in
-2050 and 2100 that was already unanimous in 2020. latitude_agreement.csv: the union and unanimous
-areas in 2-degree latitude bands (Fig. S9). Totals are checked against ensemble_summary.csv.
-
-Run after ensemble.py. Outputs in analysis/output/agreement."""
+Author: Rakibul Ahasan
+"""
 import sys
 from pathlib import Path
 

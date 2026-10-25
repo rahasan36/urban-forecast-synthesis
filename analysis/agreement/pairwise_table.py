@@ -1,10 +1,7 @@
-"""Table S12: pairwise agreement and the quantity and allocation components of disagreement.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Pooled values sum intersections, unions and each disagreement component over the 36 forecast pairs
-before dividing (Pontius and Millones, 2011); the pairwise columns summarize the individual pairs.
-The note gives the amount share of the shortfall of the pooled index under SSP1 in 2100 for zones of
-5 to 100 km and its regional range. Run after ensemble.py and amount_placement.py.
-Outputs: analysis/output/agreement/table_pairwise_agreement.csv and table_pairwise_agreement_note.txt"""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 from pathlib import Path

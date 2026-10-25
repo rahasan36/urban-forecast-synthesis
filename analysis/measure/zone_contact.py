@@ -1,14 +1,7 @@
-"""Boundary length and its cropland and forest contact for each forecast, by zone (country or region).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-The zone of a boundary side is the zone of its nonurban cell. Side lengths use the spherical scale
-factors of the equal-area grid. For countries, the script also writes the median across forecasts of
-boundary length and of the cropland and forest shares of the boundary for the countries in which all
-nine forecasts have a boundary (Fig. 3).
-
-Usage: python analysis/measure/zone_contact.py country SSP1 2100
-       python analysis/measure/zone_contact.py region SSP1 2100
-Outputs (analysis/output/measure): zone_contact_<zone>_<SSP>_<year>.npz with acc[forecast, zone,
-(all, cropland, forest)] in km, and for countries country_contact_<SSP>_<year>.csv."""
+Author: Rakibul Ahasan
+"""
 import argparse
 import json
 import sys

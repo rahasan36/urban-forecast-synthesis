@@ -1,8 +1,6 @@
-"""Supplementary Fig. 2. Urban landscape configuration across the nine forecasts.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-A-C  mean area of eight-neighbor connected urban patches, indexed to each forecast's own 2020 value.
-D-F  edge density (shared-side boundary length per unit valid landscape area), indexed in the same way.
-Columns show SSP1, SSP3 and SSP5.
+Author: Rakibul Ahasan
 """
 import argparse
 import os

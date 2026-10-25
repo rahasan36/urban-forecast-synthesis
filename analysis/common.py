@@ -1,5 +1,7 @@
-"""Shared settings of the analysis: forecasts, scenarios, years, regions, land-cover classes,
-the analysis grid and the layout of the rasters in data/rasters."""
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
+
+Author: Rakibul Ahasan
+"""
 from pathlib import Path
 import json
 import os
@@ -65,14 +67,12 @@ def ensemble_path(ssp, year):
 
 
 def urban_mask(a, product, threshold=PRIMARY_THRESHOLD):
-    """Urban cells of a harmonized forecast raster. Fractional forecasts store threshold ranks."""
     if product in FRACTIONAL:
         return (a >= THRESHOLD_RANK[threshold]) & (a != 255)
     return (a == 1) & (a != 255)
 
 
 def urban_rank(product):
-    """Smallest stored value that counts as urban at the primary threshold."""
     return THRESHOLD_RANK[PRIMARY_THRESHOLD] if product in FRACTIONAL else 1
 
 

@@ -1,9 +1,7 @@
-"""Regional shares of contested and consensus clusters under both specifications (main text and
-Fig. S12) and the Spearman correlation of the regional rankings between them.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Regions with at least 15 eligible blocks under the primary specification are reported. Run after
-primary_clusters.py and strict_clusters.py.
-Output: analysis/output/clustering/cluster_regions.csv"""
+Author: Rakibul Ahasan
+"""
 import sys
 from pathlib import Path
 

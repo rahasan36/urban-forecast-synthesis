@@ -1,7 +1,7 @@
-"""Reporting region of each 50 x 50 km block: the most frequent nonzero region code among the
-block's cells (region_all, used with the primary clustering) and among its common-valid cells
-(region_valid, used with the stricter specification). Ties take the lower code.
-Output: analysis/output/clustering/block_regions.npz"""
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
+
+Author: Rakibul Ahasan
+"""
 import sys
 from pathlib import Path
 

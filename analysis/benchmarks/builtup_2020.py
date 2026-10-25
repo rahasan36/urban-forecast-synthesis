@@ -1,13 +1,7 @@
-"""Correspondence of each forecast's 2020 map with the 2020 built-up surface layer (Table S11).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-The GHS-BUILT-S 2020 layer (Pesaresi and Politis, 2023; R2023A, Mollweide, 100 m) is read at its
-first overview level (200 m), aggregated to the analysis grid by area-weighted averaging and divided
-by 10,000 to give the built-up fraction of each 1-km cell. The script stores, within the common
-valid domain, the histogram of the fraction in 0.01 bins for all cells and for the urban cells of
-each forecast's 2020 map, so that any threshold (0.13 matches the observed urban extent; 0.20 and
-0.40 are alternatives) can be applied afterwards.
-Input: data/rasters/source/GHSL/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0.tif (or --source).
-Output: analysis/output/benchmarks/builtup_2020_histograms.json"""
+Author: Rakibul Ahasan
+"""
 import argparse
 import json
 import sys

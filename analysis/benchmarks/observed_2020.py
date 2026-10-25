@@ -1,9 +1,7 @@
-"""Correspondence of each forecast's 2020 map with observed urban land in 2020 (Table S10).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Observed urban land is class 190 of the 2020 land-cover map on the analysis grid
-(harmonize/landcover_baseline.py 2020). For each forecast and scenario the script counts, within the
-common valid domain, the mapped urban cells and their intersection with the observed urban cells.
-Output: analysis/output/benchmarks/observed_2020_counts.json"""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 import time

@@ -1,9 +1,6 @@
-"""Cut the metropolitan windows drawn in Supplementary Figs. 13 to 15 out of the SSP1 ensemble rasters.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-The ensemble rasters store, for each 1-km cell of the EPSG:6933 analysis grid, a 9-bit mask of the
-forecasts that classify the cell as urban (65535 marks cells outside the common valid domain). Each
-window is a square centered on the given point, 220 km wide for Supplementary Fig. 13 and 160 km wide
-for Supplementary Figs. 14 and 15, written as a compressed GeoTIFF to data/figures/metropolitan.
+Author: Rakibul Ahasan
 """
 import argparse
 import os

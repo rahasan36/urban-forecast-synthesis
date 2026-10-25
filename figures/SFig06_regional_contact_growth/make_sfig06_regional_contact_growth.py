@@ -1,10 +1,6 @@
-"""Supplementary Fig. 6. Regional change in cropland and forest contact and its spread among forecasts.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Change in urban boundary contact from 2020 to 2100 in the 19 reporting regions under SSP1, SSP3 and SSP5,
-with regions ordered by the SSP1 median of panel A.
-A, B  ratio of 2100 to 2020 contact length with cropland (A) and forest (B); dots mark the median and bars
-      the range across the nine forecasts.
-C     ratio of the longest to the shortest forecast cropland contact length in 2100.
+Author: Rakibul Ahasan
 """
 import argparse
 import os

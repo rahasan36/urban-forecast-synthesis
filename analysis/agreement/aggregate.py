@@ -1,22 +1,7 @@
-"""Pairwise agreement tallies under SSP1 for 2020 and 2100 (Fig. 4, Table S12 and the amount and
-placement split).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-hist<Y>[row, col, n]      valid 1-km cells by the number n of forecasts calling them urban, in
-                          20-km blocks, for Y = 2020 and 2100
-inter<Y>_<unit>[u, pair]  intersection of each of the 36 forecast pairs (itertools order), by country
-                          or region
-area<Y>_<unit>[u, i]      urban cells of each forecast, by country or region
-rel2020[region, n, obs]   valid cells by 2020 forecast count and observed 2020 urban land (class 190)
-st_*                      2100 strata = 20-km block x distance band from the cells all nine forecasts
-                          call urban in 2020 (bands 0 = inside, 1 to 10 = 5-km steps to 50 km, 11 =
-                          beyond), with A, S1, S2, O, M and Un from agreement_stats.strata, only for
-                          strata with S1 > 0
-Distances are Euclidean on ground spacing, with the row and column spacing of each band of rows.
-
-Usage: python analysis/agreement/aggregate.py            (whole grid)
-       python analysis/agreement/aggregate.py --part 0   (rows 0 to 6999; --part 1 for the rest)
-       python analysis/agreement/aggregate.py --combine  (joins the two part files)
-Output: analysis/output/agreement/aggregate_SSP1.npz (or aggregate_SSP1_part<P>.npz)."""
+Author: Rakibul Ahasan
+"""
 import argparse
 import itertools
 import sys

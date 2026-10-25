@@ -1,13 +1,7 @@
-"""Urban landscape configuration: patch count, mean patch area and edge density of every forecast map.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Patches are eight-neighbor connected urban components, counted globally and within each region
-(clipped at region and common-domain boundaries). The global grid is labeled in strips of rows and
-the strip seams are stitched across all three eight-neighbor contacts, so the strip counts equal
-whole-map counts; verify() checks this on random maps. Mean patch area divides urban area by the
-patch count, and edge density divides boundary length by the valid landscape area.
-
-Run after measure_maps.py. Outputs (analysis/output/measure): patches/patches_*.json and
-configuration_metrics.csv."""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 import time

@@ -1,13 +1,7 @@
-"""Urban area and boundary length of each forecast in 100 x 100 km blocks, for one SSP and year.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Area counts the valid 1-km cells a forecast classifies as urban. Boundary length counts the grid
-sides joining an urban and a nonurban cell, both valid, weighted by their ground length on the
-equal-area grid (cos30/cos(lat) km for sides between columns, cos(lat)/cos30 km for sides between
-rows) and assigned to the block of the upper or left cell. Used for the block dispersion of
-Fig. 2 and Figs. S3 and S4.
-
-Usage: python analysis/measure/blocks.py SSP1 2100
-Output: analysis/output/measure/blocks100_<SSP>_<year>.npz with area[9, rows, cols] and bnd[9, rows, cols]."""
+Author: Rakibul Ahasan
+"""
 import argparse
 import sys
 import time

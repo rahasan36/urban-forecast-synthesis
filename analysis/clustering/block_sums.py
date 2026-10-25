@@ -1,13 +1,7 @@
-"""Sums over 50 x 50 km blocks of the nine-forecast urban counts and of the union boundary.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-For one scenario and year: nsum (summed number of forecasts calling each valid cell urban), union
-(cells at least one forecast calls urban), unan (cells all nine call urban), dis (union minus
-unanimous), and the boundary of the union footprint, bt (all sides), bc (sides adjoining 2016
-cropland) and bf (sides adjoining 2016 forest), in km with the spherical scale factors of the
-equal-area grid. Boundary sides are assigned to the block of their left or upper cell.
-
-Usage: python analysis/clustering/block_sums.py SSP1 2100
-Output: analysis/output/clustering/block_sums_<SSP>_<year>.npz"""
+Author: Rakibul Ahasan
+"""
 import argparse
 import sys
 import time

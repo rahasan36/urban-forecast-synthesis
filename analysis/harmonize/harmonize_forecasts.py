@@ -1,16 +1,7 @@
-"""Reproject the 81 source forecast maps (nine forecasts, SSP1, SSP3 and SSP5, 2020, 2050 and 2100)
-onto the 1-km equal-area grid (EPSG:6933) and build the common valid domain.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Categorical forecasts are written as 0 (nonurban), 1 (urban) and 255 (missing), with nearest-neighbor
-resampling. The two fractional forecasts (Gao 2021 and He 2023, He 2023 percentages divided by 100)
-are area-averaged and stored as threshold ranks 0 to 3, the number of the thresholds 0.30, 0.40 and
-0.50 the urban fraction reaches, with 255 for missing. The common valid domain holds the cells that
-are valid in all 81 maps and in the 2016 land-cover baseline, between 55.908°S and 75.004°N.
-
-Inputs: the source files listed in source_index.csv under data/rasters/source, the region raster
-(its grid defines the analysis grid) and the 2016 land-cover baseline.
-Outputs: data/rasters/harmonized/<forecast>_SSP<s>_<year>.tif with a JSON histogram beside each,
-data/rasters/common_valid.tif and data/rasters/grid.json."""
+Author: Rakibul Ahasan
+"""
 import concurrent.futures
 import csv
 import json
@@ -87,7 +78,6 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
     results = list(pool.map(harmonize, records))
 (output_dir("harmonize") / "harmonization.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
 
-# The common domain spans all forecasts, scenarios and years; missing data never counts as nonurban.
 srcs = [rasterio.open(forecast_path(d["product"], d["ssp"], d["year"])) for d in records]
 inv = Transformer.from_crs(6933, 4326, always_xy=True)
 lats = np.array(inv.transform(np.zeros(H), TR.f + (np.arange(H) + .5) * TR.e)[1])

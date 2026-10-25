@@ -1,14 +1,7 @@
-"""Primary local clustering of disagreement intensity under SSP1 in 2100 (Fig. S12A, main text).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Disagreement intensity of a 50-km block is D = 1 - NS / (9 U), one minus the mean share of the nine
-forecasts calling the block's union cells urban (Eq. S11), for blocks with at least 10 km2 of union
-urban land. Gi* uses binary weights over a circular neighborhood of radius four blocks (49 block
-positions, about 200 km) including the focal block. Blocks with z >= 1.96 form contested clusters
-(low support) and blocks with z <= -1.96 consensus clusters (high support). The same statistic is
-also computed for the cropland boundary of the union footprint.
-
-Run after block_sums.py SSP1 2020, block_sums.py SSP1 2100 and block_regions.py.
-Outputs (analysis/output/clustering): gistar_SSP1_2100.npz and primary_clusters_regions.json"""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 from pathlib import Path

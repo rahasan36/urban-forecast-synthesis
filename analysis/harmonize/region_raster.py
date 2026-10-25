@@ -1,8 +1,7 @@
-"""Rasterize the 20 reporting regions of the IPCC AR6 country grouping onto the analysis grid.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Region codes follow the alphabetical order of the region names (1 Asia-Pacific Developed to
-20 Western Africa). Input: Countries_AR6_20Regions.shp under data/rasters/source/AR6_regions
-(or --shapefile). Outputs: data/rasters/baseline/AR6_20regions_cea1km.tif and its code table."""
+Author: Rakibul Ahasan
+"""
 import argparse
 import json
 import sys

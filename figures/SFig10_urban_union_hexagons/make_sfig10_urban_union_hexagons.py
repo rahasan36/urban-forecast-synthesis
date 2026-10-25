@@ -1,12 +1,6 @@
-"""Supplementary Fig. 10: urban union of the nine forecasts in 2020, 2050 and 2100 on a hexagon grid
-under SSP1, SSP3 and SSP5 (panels a to c).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Pointy-top hexagons 350 km apart in Robinson coordinates tile every land area with at least
-2,000 km2 of common valid domain. In each hexagon the outline circle is the urban union in 2100,
-the filled disc the urban union in 2050, and the color of both the urban union in 2020. Circle area
-is proportional to urban land, and the largest circle (the 98th percentile of the 2100 hexagon totals
-pooled over the three pathways, or more) fills 92 percent of the hexagon's inscribed circle.
-The inputs are the 5-km block totals of the urban union and of the common valid domain.
+Author: Rakibul Ahasan
 """
 import argparse
 import os
@@ -33,17 +27,15 @@ plt.rcParams.update({
 
 SSPS = ["SSP1", "SSP3", "SSP5"]
 LETTERS = {"SSP1": "a", "SSP3": "b", "SSP5": "c"}
-GRID_X0, GRID_Y0 = -17367529.34, 7289708.89   # upper-left corner of the EPSG:6933 analysis grid (m)
-BLOCK = 5000.0                                # block size of the inputs (m)
-SPACING = 350000.0                            # distance between hexagon centers (m)
+GRID_X0, GRID_Y0 = -17367529.34, 7289708.89
+BLOCK = 5000.0
+SPACING = 350000.0
 SIDE = SPACING / np.sqrt(3)
 APOTHEM = SPACING / 2
 RMAX = 0.92 * APOTHEM
 RING = 0.6
 ROB = ccrs.Robinson()
 
-# Each pathway is drawn as a 7.2 x 5.35 in panel whose top 61 percent is kept,
-# and the three panels are stacked with a 0.2 in gap.
 PANEL_W, PANEL_H = 7.2, 5.35
 KEEP = 0.61
 GAP = 0.2
@@ -63,14 +55,12 @@ def out_name(folder, stem, ext):
 
 
 def panel_rect(k, x, y, w, h):
-    """Convert a rectangle given in the coordinates of a single 7.2 x 5.35 in panel to figure coordinates."""
     top = FIG_H - k * (KEEP * PANEL_H + GAP)
     y_in = top - (1 - y) * PANEL_H
     return [x, y_in / FIG_H, w, h * PANEL_H / FIG_H]
 
 
 def hexagon_index(valid):
-    """Assign every 5-km block with valid cells to a hexagon of the Robinson lattice."""
     iy, ix = np.nonzero(valid > 0)
     to_lonlat = Transformer.from_crs(6933, 4326, always_xy=True)
     lon, lat = to_lonlat.transform(GRID_X0 + (ix + 0.5) * BLOCK, GRID_Y0 - (iy + 0.5) * BLOCK)
@@ -150,7 +140,6 @@ def main():
         cb.ax.xaxis.set_label_position("top")
         cb.set_label("Urban land in 2020 (km²)", labelpad=2)
 
-        # Size key in the Atlantic between South America and Africa, drawn at the map scale.
         fig.canvas.draw()
         bbox = ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted())
         xlim = ax.get_xlim()
@@ -180,7 +169,6 @@ def main():
                 kax.add_patch(Circle((cx, yc), radius(u_inner), facecolor="#6E6E6E", edgecolor="none"))
             last = kax.text(tx, yc, label, ha="left", va="center", fontsize=8)
 
-        # Align the bottom of the last key row with the bottom of the color bar tick labels.
         fig.canvas.draw()
         renderer = fig.canvas.get_renderer()
         to_fig = fig.transFigure.inverted()

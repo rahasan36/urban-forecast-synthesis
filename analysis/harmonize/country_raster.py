@@ -1,9 +1,7 @@
-"""Rasterize the Natural Earth 1:50 million countries (Antarctica excluded) onto the analysis grid.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Country codes are assigned in the order of the ADM0_A3 codes in the shapefile.
-Input: data/figures/naturalearth/ne_50m_admin_0_countries.shp (or --shapefile).
-Outputs: data/rasters/baseline/countries_cea1km.tif and country_codes.json (code and name of each
-ADM0_A3)."""
+Author: Rakibul Ahasan
+"""
 import argparse
 import json
 import sys

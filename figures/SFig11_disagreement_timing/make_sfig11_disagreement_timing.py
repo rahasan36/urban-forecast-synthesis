@@ -1,12 +1,6 @@
-"""Supplementary Fig. 11: when disagreement among the nine forecasts first appears, under SSP1, SSP3
-and SSP5 (one page per pathway, stacked).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Land is disputed when one to eight of the nine forecasts classify it as urban. Each 1-km cell of the
-common valid domain that is disputed by 2100 is assigned to the date it is first disputed: by 2020,
-2020 to 2050, or 2050 to 2100. Panel a shows dots on a 300-km lattice, and panels b to e show 5-km
-dots in 220 x 220 km windows. Dot area scales with the disputed area and dot color mixes the shares of
-the three dates. Dot-size caps (98th percentile of dot totals) are pooled over the three pathways,
-globally and for each window, so dot sizes compare across pathways.
+Author: Rakibul Ahasan
 """
 import argparse
 import json
@@ -35,16 +29,15 @@ plt.rcParams.update({
 })
 
 SSPS = ["SSP1", "SSP3", "SSP5"]
-GRID_X0, GRID_Y0 = -17367529.34, 7289708.89   # upper-left corner of the EPSG:6933 analysis grid (m)
-BLOCK = 5000.0                                # block size of the inputs (m)
-HALF = 110000.0                               # half-width of the windows (m)
+GRID_X0, GRID_Y0 = -17367529.34, 7289708.89
+BLOCK = 5000.0
+HALF = 110000.0
 KEYS = ["d2020", "d2050", "d2100"]
 LABELS = ["Disputed\nby 2020", "First disputed\n2020 to 2050", "First disputed\n2050 to 2100"]
-COLORS = np.array([[0.23, 0.43, 0.74], [0.91, 0.66, 0.12], [0.84, 0.20, 0.42]])   # blue, amber, magenta
+COLORS = np.array([[0.23, 0.43, 0.74], [0.91, 0.66, 0.12], [0.84, 0.20, 0.42]])
 WINDOWS = [("b", "New York–Philadelphia", -74.6, 40.25), ("c", "Lagos–Ibadan", 3.6, 6.95),
            ("d", "Rhine–Ruhr", 7.0, 51.4), ("e", "Dhaka", 90.4, 23.78)]
 
-# Each pathway is a 7.2 x 5.35 in page; the three pages are stacked with a 0.2 in gap.
 PANEL_W, PANEL_H = 7.2, 5.35
 GAP = 0.2
 FIG_H = 3 * PANEL_H + 2 * GAP
@@ -63,7 +56,6 @@ def out_name(folder, stem, ext):
 
 
 def page_rect(k, x, y, w, h):
-    """Convert a rectangle given in the coordinates of one 7.2 x 5.35 in page to figure coordinates."""
     bottom = FIG_H - k * (PANEL_H + GAP) - PANEL_H
     return [x, (bottom + y * PANEL_H) / FIG_H, w, h * PANEL_H / FIG_H]
 
@@ -143,7 +135,6 @@ def draw_page(fig, k, comps, caps, land, borders):
     x, y, _, _ = page_rect(k, 0.006, 0.985, 0, 0)
     fig.text(x, y, "a", fontsize=10, fontweight="bold", va="top")
 
-    # ternary color key over the South Pacific, with the global shares as a white dot
     key = fig.add_axes(page_rect(k, 0.035, 0.455, 0.155, 0.17))
     key.set_axis_off()
     n = 200
@@ -163,7 +154,6 @@ def draw_page(fig, k, comps, caps, land, borders):
     key.text(1.0, -0.06, LABELS[1], ha="center", va="top", fontsize=8)
     key.text(0.5, 0.92, LABELS[2], ha="center", va="bottom", fontsize=8)
 
-    # dot-size key over the southern Indian Ocean
     sk = fig.add_axes(page_rect(k, 0.62, 0.415, 0.20, 0.07))
     sk.set_axis_off()
     sk.set_xlim(0, 3)

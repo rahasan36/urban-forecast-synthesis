@@ -1,20 +1,7 @@
-"""Nine-forecast membership, pairwise agreement, temporal transitions and shared boundary segments.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-For each scenario and year the script writes the membership raster, in which bit k (Li 2021 first,
-FU3D 2025 last) marks the cells forecast k classifies as urban, 65535 marks invalid cells and 511
-unanimous cells. From its histogram it derives the union, unanimous, single-forecast and majority
-areas, the pair intersections and unions of the 36 forecast pairs with the quantity and allocation
-components of their disagreement (Pontius and Millones, 2011), and the leave-one-out ensembles.
-Cells are classed as no urban votes, disputed (one to eight votes) or unanimous; transitions from
-2020 separate inherited disagreement (disputed in 2020 and later) from new disagreement. Boundary
-segments are tallied by the number of forecasts whose boundary includes them, for all boundaries and
-for sides adjoining 2016 cropland and forest, with WGS84 ellipsoidal side lengths.
-
-Outputs: data/rasters/harmonized/ensemble_SSP<s>_<year>.tif and, in analysis/output/agreement,
-ensemble_summary.csv, pairwise_agreement.csv, leave_one_out_agreement.csv, temporal_transitions.csv,
-direct_boundary_agreement.csv and blocks_SSP<s>_<year>.npz (50-km block sums of the union,
-unanimous, majority, single-forecast, valid, inherited and new disagreement and persistent agreement
-cells, with the membership histogram)."""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 from pathlib import Path
@@ -120,7 +107,6 @@ for s in SSPS:
             maps.update(inherited_disagreement=blocks((previous == 1) & (state == 1)),
                         new_disagreement=blocks((previous != 1) & (state == 1)),
                         persistent_agreement=blocks((previous == 2) & (state == 2)))
-        # Boundary segments are tallied directly, not inferred from agreement on urban cells.
         eh = {c: np.zeros(10) for c in ["All boundaries", "Cropland", "Forest"]}
         for row in range(0, H, 250):
             end = min(row + 250, H)

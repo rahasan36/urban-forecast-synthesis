@@ -1,8 +1,6 @@
-"""Supplementary Fig. 14: number of forecasts classifying each 1-km cell as urban in 2020 and 2100 under SSP1
-in seven large metropolitan regions, in windows of 160 x 160 km.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Each panel gives the share of the urban union that all nine forecasts, and that only one forecast,
-classify as urban.
+Author: Rakibul Ahasan
 """
 import argparse
 import os
@@ -24,7 +22,6 @@ FONT = dict(inset=6, title=8, year=9, legend=7, letter=9)
 plt.rcParams.update({"font.family": "sans-serif", "font.sans-serif": ["Arial", "Liberation Sans", "DejaVu Sans"],
                      "font.size": 7, "pdf.fonttype": 42})
 
-# (title, file name stem in data/figures/metropolitan)
 METROS = [
     ("Houston", "houston"),
     ("Dallas–Fort Worth", "dallas_fort_worth"),
@@ -50,7 +47,6 @@ def out_name(folder, stem, ext):
 
 
 def product_count(mask):
-    """Number of forecasts classifying each cell as urban, from the 9-bit membership mask."""
     lut = np.array([bin(i).count("1") for i in range(512)])
     valid = mask != NO_DATA
     return lut[np.where(valid, mask, 0)], valid

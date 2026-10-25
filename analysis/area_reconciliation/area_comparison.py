@@ -1,14 +1,7 @@
-"""Comparison of urban area on each forecast's full source domain and on the common analysis domain.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Assembles the outputs of full_domain_areas.py (and gao_land_weighted.py when present) into one row
-per analyzed map and one per distributed base-year map, with the area outside the common domain and
-its share of the full-source area, and checks the common-domain areas against measure_maps.py.
-Reported values: the Li 2021 country demand sums from the authors' Cntry_SSP_UrbanTS.xlsx (146
-countries; model demand, not allocated raster area) when the workbook is under
-data/rasters/source/Li2021, and the Gao 2021 base-year total of 610,742 km2 (Gao and O'Neill, 2020,
-Supplementary Table 1). Other totals were not located and stay empty.
-Outputs (analysis/output/area_reconciliation): area_comparison_forecasts.csv and
-area_comparison_baselines.csv"""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 from pathlib import Path

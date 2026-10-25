@@ -1,14 +1,7 @@
-"""Urban area, overlap with the 2016 land-cover baseline and boundary contact of every forecast map.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-For each forecast, scenario, year and threshold (0.30, 0.40 and 0.50 for the fractional forecasts,
-0.40 elsewhere), the script counts urban cells by region and baseline class and measures the
-boundary: every horizontal or vertical grid side that joins an urban and a nonurban cell, both in
-the common valid domain, contributes its WGS84 ellipsoidal ground length and is assigned to the
-region and baseline class of the nonurban cell. Sides that touch an invalid cell are excluded and
-their length is recorded separately.
-
-Outputs (analysis/output/measure): maps/metrics_<forecast>_SSP<s>_<year>_<threshold>.json,
-global_metrics.csv, regional_metrics.csv, landcover_metrics.csv and baseline_availability.json."""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 import time
@@ -53,7 +46,6 @@ vertical = np.asarray(geod.inv(lo[:-1], la[:-1], lo[1:], la[1:])[2]) / 1000
 
 
 def edges(u):
-    """Boundary length by region and class of the nonurban cell, excluded length and side count."""
     out = np.zeros((21, 13), dtype="float64")
     excluded = 0.
     total_count = 0

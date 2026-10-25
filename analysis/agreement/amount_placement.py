@@ -1,15 +1,7 @@
-"""Split of the shortfall of pooled pairwise agreement into amount and placement (SSP1, 2100).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Within each stratum the largest intersection a forecast pair can reach is min(u_i, u_j), which gives
-the ceiling J_max of the pooled Jaccard index, and independent placement gives J_ind. The shortfall
-1 - J splits into an amount part (1 - J_max: the forecasts assign different amounts of urban land to
-the stratum) and a placement part (J_max - J: the same amount in different cells), Eqs. S8 to S10.
-Pooled indices are X / (8 S1 - X) for X = O, M or E summed over the strata.
-
-Results: by distance band from the 2020 unanimous cells (20-km zone x band strata), by zone size
-(5 to 100 km) and by region (20-km zone x band strata, each zone assigned to the region of its
-center). Run after aggregate.py and zone_scale.py.
-Output: analysis/output/agreement/amount_placement_SSP1_2100.json"""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 from pathlib import Path

@@ -1,10 +1,6 @@
-"""Supplementary Fig. 3. Boundary density of each forecast relative to the block median.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-For each 100 x 100 km block in which every forecast maps at least 10 km2 of urban land, a forecast's boundary
-density (boundary length per unit urban area) is divided by the median density of the nine forecasts in that block.
-a-c  share of blocks where the forecast lies below (blue) or above (red) the block median, dark shading below
-     0.8 or above 1.25 times the median; SSP1 2020 (a), SSP1 2100 (b) and SSP5 2100 (c).
-d    distribution of the ratio to the block median by forecast, SSP1 2020 (solid) and 2100 (hatched).
+Author: Rakibul Ahasan
 """
 import argparse
 import os
@@ -41,7 +37,6 @@ def out_path(folder, ext):
 
 
 def density_ratios(blocks_dir, ssp, year):
-    """Boundary density of each forecast divided by the block median, for blocks with >= 10 km2 in every forecast."""
     z = np.load(os.path.join(blocks_dir, f"blocks100km_{ssp}_{year}.npz"))
     area = z["area"].astype(float)
     boundary = z["bnd"].astype(float)

@@ -1,12 +1,7 @@
-"""Amount and placement sums for zones of 5, 10, 20, 50 and 100 km (SSP1, 2100).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-For each zone size, the sums over zones of O (pair intersections), M (the largest pair intersections
-the zone amounts allow), E (pair intersections expected under independent placement in the zone) and
-S1 (summed forecast area), by region (the region of the zone's center cell) and, for 10, 20 and 50 km
-zones, by distance band from the cells all nine forecasts call urban in 2020.
-
-Usage: python analysis/agreement/zone_scale.py [--part 0|1] [--combine]
-Output: analysis/output/agreement/zone_scale_SSP1_2100.npz (or its part files)."""
+Author: Rakibul Ahasan
+"""
 import argparse
 import sys
 import time

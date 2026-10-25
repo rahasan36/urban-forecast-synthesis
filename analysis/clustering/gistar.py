@@ -1,8 +1,7 @@
-"""Getis-Ord Gi* z scores on a regular grid with binary weights over a circular neighborhood that
-includes the focal cell (Getis and Ord, 1992; Eq. S12).
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Run as a script, it checks the FFT implementation against a brute-force calculation on a synthetic
-grid with one implanted high and one implanted low cluster, and on a field of pure noise."""
+Author: Rakibul Ahasan
+"""
 import numpy as np
 from scipy.signal import fftconvolve
 
@@ -13,7 +12,6 @@ def disk(r):
 
 
 def gistar(x, mask, r=4):
-    """x: values; mask: boolean study set; r: neighborhood radius in cells. Returns z (NaN outside mask)."""
     K = disk(r)
     m = mask.astype(np.float64)
     xv = np.where(mask, x, 0.0)

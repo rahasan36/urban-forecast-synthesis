@@ -1,13 +1,7 @@
-"""Endpoint changes from 2020 to 2100 and ensemble summaries of boundary contact.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Each forecast is kept as its own member; the spread among forecasts is described, never treated as
-a sample. Ensemble means of contact use four weightings: the nine forecasts with equal weight, the
-three forecasts sharing the FLUS allocation model (Chen 2020, Chen 2022, Hou 2022) at one-third each
-(Table S8), the original four forecasts, and SSP1 without Zhang 2023.
-
-Run after measure_maps.py. Outputs (analysis/output/measure): endpoint_changes.csv,
-landcover_endpoint_changes.csv (net overlap increase and its share, Table S4), landcover_rankings.csv
-and ensemble_contact_changes.csv."""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 from pathlib import Path

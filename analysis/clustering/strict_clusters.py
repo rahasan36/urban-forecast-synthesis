@@ -1,17 +1,7 @@
-"""Stricter specification of local clustering of urban support (Fig. S12B) and block support.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Block support is the summed urban votes divided by nine times the union area of a 50-km block,
-computed from the membership rasters for SSP1, SSP3 and SSP5 in 2020 and 2100 and checked against
-the block unions of agreement/ensemble.py and the measured urban areas. The stricter specification
-uses support itself (positive z means higher support), blocks with at least 25 km2 of union urban
-land, a 9 x 9 block neighborhood including the focal block, at least nine eligible blocks in the
-neighborhood, two-sided normal p-values and Benjamini-Yekutieli false discovery rate control at
-0.05 (Eq. S13). The script also measures the outer boundary of the SSP1 2100 union footprint
-adjoining 2016 cropland, with WGS84 ellipsoidal side lengths, by block.
-
-Run after agreement/ensemble.py, measure/measure_maps.py and block_regions.py.
-Outputs (analysis/output/clustering): support_SSP<s>_<year>.npz, union_cropland_boundary_2100.npz,
-support_clusters.npz and strict_clusters_settings.json"""
+Author: Rakibul Ahasan
+"""
 import json
 import sys
 from pathlib import Path

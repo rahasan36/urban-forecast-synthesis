@@ -1,10 +1,6 @@
-"""Supplementary Fig. 8: exact forecast intersections in the nine-forecast ensemble, SSP1.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Each 1-km cell carries a membership code, the set of forecasts that call it urban (bit i
-set for forecast i, in the order of the matrix rows). (A to C) Area of the 20 largest
-nonempty combinations in 2100, in 2020, 2050 and 2100, with the all-nine combination in
-red; the annotation gives the share of that year's union the combinations cover.
-(D) Membership matrix of the combinations.
+Author: Rakibul Ahasan
 """
 import argparse
 import math

@@ -1,7 +1,6 @@
-"""Supplementary Fig. 5. Urban boundaries adjoining cropland and forest across scenarios.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-Global length of urban boundary in contact with cropland (A-C) and forest (D-F) of the 2016 land-cover
-baseline, in 2020, 2050 and 2100, for the nine forecasts. Columns show SSP1, SSP3 and SSP5.
+Author: Rakibul Ahasan
 """
 import argparse
 import os

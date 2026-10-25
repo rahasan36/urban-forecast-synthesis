@@ -1,10 +1,6 @@
-"""Figure 1. Variation among the nine forecasts in urban boundary length relative to urban area.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-a-c  global urban boundary length of each forecast in 2020, 2050 and 2100 under SSP1, SSP3 and SSP5.
-d    boundary length per unit urban area under SSP1.
-e    2100/2020 ratio of boundary length against the 2100/2020 ratio of urban area, all forecasts and pathways.
-f-h  coefficient of variation of urban area and of boundary length across the nine forecasts, with the
-     range over the nine leave-one-out ensembles.
+Author: Rakibul Ahasan
 """
 import argparse
 import os

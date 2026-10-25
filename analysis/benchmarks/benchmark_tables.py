@@ -1,11 +1,7 @@
-"""Tables S10 and S11 from the outputs of observed_2020.py and builtup_2020.py.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-For each forecast and scenario: mapped urban area, intersection with the reference, Jaccard index
-(intersection / union), share of the reference recovered (intersection / reference) and the ratio of
-mapped to reference area. The built-up reference is thresholded at a built-up fraction of 0.13
-(--threshold). The Spearman correlation compares the forecasts' Jaccard indices under the two
-references in each scenario.
-Outputs (analysis/output/benchmarks): table_observed_2020.csv and table_builtup_2020.csv"""
+Author: Rakibul Ahasan
+"""
 import argparse
 import json
 import sys

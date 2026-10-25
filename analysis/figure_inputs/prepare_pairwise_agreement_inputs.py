@@ -1,14 +1,6 @@
-"""Reduce the SSP1 agreement aggregation to the arrays drawn in Fig. 4.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-The aggregation is stored in two parts, each covering half of the grid rows. The
-20-km block histograms and the region and country tallies are summed over the two
-parts. The output holds:
-  hist2100            valid 1-km cells by the number of forecasts calling them urban
-                      (0 to 9) in each 20-km block, 2100
-  hist2020_global     the same counts summed over the globe, 2020
-  inter<Y>_<unit>     pair intersection (36 pairs, itertools.combinations order) by
-                      region or country, km2
-  area<Y>_<unit>      urban area of each forecast by region or country, km2
+Author: Rakibul Ahasan
 """
 import argparse
 import os

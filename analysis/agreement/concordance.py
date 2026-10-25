@@ -1,13 +1,7 @@
-"""Table S9: Kendall's coefficient of concordance of regional ranks across the nine forecasts.
+"""Divergent urban boundaries and high spatial uncertainty in global urban land forecasts
 
-For urban area (from measure/measure_maps.py) and for cropland and forest contact (from
-measure/zone_contact.py by region), the 19 reporting regions are ranked within each forecast and
-W = 12 S / (m^2 (n^3 - n)), with m = 9 forecasts, n = 19 regions and S the sum of squared deviations
-of the regions' rank sums from their mean. W ranges from 0 (no common ordering) to 1 (identical
-orderings).
-
-Run after measure_maps.py and zone_contact.py region <SSP> <year> for the nine scenario-year
-combinations. Output: analysis/output/agreement/table_concordance.csv"""
+Author: Rakibul Ahasan
+"""
 import sys
 from pathlib import Path
 
@@ -20,7 +14,6 @@ from common import OUTPUT, PRODUCTS, REGIONS, REGIONS_MAIN, SSPS, YEARS, output_
 
 
 def kendall_w(M):
-    """M: regions x forecasts."""
     r = np.apply_along_axis(rankdata, 0, M)
     m, n = M.shape[1], M.shape[0]
     Ri = r.sum(1)
